@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Bora ler a Bíblia</title>
+    <meta name="description" content="Acompanhe sua leitura da Bíblia — planos de leitura, progresso por livro, trilhas por personagem e marcador de onde você parou." />
+
+    <!-- PWA / instalação -->
+    <meta name="theme-color" content="#6C4EA6" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Bora ler a Bíblia" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- ====================================================================
+         CONFIGURAÇÃO DO FIREBASE
+         Preencha com as credenciais do SEU projeto (Firebase Console >
+         Configurações do projeto > Seus apps > Config). Esses valores não
+         são segredo (são públicos em qualquer app Firebase do lado do
+         cliente) — quem protege os dados são as REGRAS DE SEGURANÇA do
+         Firestore (veja o arquivo firestore.rules), não esconder esta
+         configuração.
+         Se você deixar apiKey como está (placeholder), o app funciona
+         normalmente salvando tudo só no navegador (localStorage), sem
+         login e sem nuvem.
+    ==================================================================== -->
+    <script>
+      window.__FIREBASE_CONFIG__ = {
+        apiKey: "COLOQUE_AQUI_SUA_API_KEY",
+        authDomain: "SEU-PROJETO.firebaseapp.com",
+        projectId: "SEU-PROJETO",
+        storageBucket: "SEU-PROJETO.appspot.com",
+        messagingSenderId: "000000000000",
+        appId: "1:000000000000:web:xxxxxxxxxxxxxxxxxxxxxx",
+      };
+    </script>
+    <script type="module" crossorigin src="./index-D_Cpj-AA.js"></script>
+    <link rel="stylesheet" crossorigin href="./index--K2A96Dc.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
